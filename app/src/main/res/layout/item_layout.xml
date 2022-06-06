@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="168dp"
+        android:layout_height="321dp"
+        app:cardBackgroundColor="@color/cardBackground"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/mainImage"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <FrameLayout
+            android:id="@+id/bar"
+            android:layout_width="144dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="120dp"
+            android:background="#00000000">
+
+            <View
+                android:layout_width="39dp"
+                android:layout_height="20dp"
+                android:background="@color/discount"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/discont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:layout_marginLeft="3dp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/favourites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"/>
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mainPrice"
+            android:text=""
+            android:textColor="@color/black"
+            android:gravity="top"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginTop="158dp"
+            android:layout_marginBottom="146dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/PriceBeforeDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text=""
+            android:layout_marginStart="78dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginTop="158dp"
+            android:layout_marginBottom="146dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
